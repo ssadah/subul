@@ -1,0 +1,32 @@
+page-create-post {
+  .button-md-primary {
+    display: block;
+    margin: 0 auto;
+    font-weight: bold;
+    box-shadow: none;
+    border-radius: 8px;
+    padding: 20px 25px;
+  }
+  .circle-btn {
+    display: block;
+    margin: 0 auto;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 12px solid $primary;
+    background: #fff;
+    position: relative;
+    top: -35px;
+  }
+  .item-label-stacked .text-input-md, .item-label-floating .text-input-md{
+    height: 60px;
+  }
+  input, textarea, .item-input, .item-input-wrapper,input, textarea, .item-input, .item-input-wrapper{
+    background-color: #fff !important;
+    margin-bottom: 30px;
+  }
+  .placeholder-img{
+    width: 100%;
+    height: 60vh;
+  }
+}

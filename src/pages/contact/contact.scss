@@ -1,0 +1,34 @@
+page-contact {
+  .fab .button-inner{
+    font-size: 8px;
+    font-weight: bold;
+  }
+  h2{
+    color: $font-dark-color;
+    font-weight: bold !important;
+  }
+}
+#map{
+  height: 30vh;
+  width: 100%;
+}
+.sub-tabs{
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px 10px;
+}
+.sub-tabs li{
+  float: left;
+  width: 33%;
+  text-align: center;
+  list-style: none;
+  padding: 10px 0px;
+  color: $font-dark-color;
+  font-weight: bold;
+}
+.sub-tabs li.active{
+  border-bottom: 5px solid #1fa8ac;
+}
+.item-md ion-thumbnail ion-img, .item-md ion-thumbnail img{
+  border-radius: 5px;
+}

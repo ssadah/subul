@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Assistance
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div id="map" #map></div>
+  <ul class="sub-tabs">
+    <li class="active">First Aid</li>
+    <li>Hajj Q&A</li>
+    <li>More Categories</li>
+  </ul>
+  <ion-list>
+      <ion-item  *ngFor="let item of items">
+        <ion-thumbnail item-start>
+          <img [src]="item.imageUrl">
+        </ion-thumbnail>
+        <h2>{{item.title}}</h2>
+        <p>{{item.place}}</p>
+      </ion-item>
+
+  </ion-list>
+  <ion-fab bottom right>
+    <button ion-fab color="primary">VOLUNTEER</button>
+  </ion-fab>
+</ion-content>

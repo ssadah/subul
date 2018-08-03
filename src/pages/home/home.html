@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Community</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngFor="let post of posts">
+    <ion-card-title class="post-author">
+      {{post.name}}
+    </ion-card-title>
+    <small class="time">{{post.date}}</small>
+    <img src="{{post.image}}" class="post-image"/>
+    <div class="post-content">
+      <ion-icon name="ios-heart-outline" mode="ios"></ion-icon>
+      <ion-icon name="ios-chatbubbles-outline" mode="ios"></ion-icon>
+      <p class="likes">
+        {{post.likes}} likes
+      </p>
+      <p class="hashtags">
+        {{post.hashtags}}
+      </p>
+      <p>
+        {{post.description}}
+      </p>
+    </div>
+  </ion-card>
+  <ion-fab bottom right (click)="addPost()">
+    <button ion-fab color="primary">POST</button>
+  </ion-fab>
+</ion-content>
